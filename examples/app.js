@@ -22,6 +22,7 @@ import RichText from './rich-text'
 import SearchHighlighting from './search-highlighting'
 import SyncingOperations from './syncing-operations'
 import Tables from './tables'
+import Playground from './playground'
 
 /**
  * Examples.
@@ -51,6 +52,7 @@ const EXAMPLES = [
   ['Forced Layout', ForcedLayout, '/forced-layout'],
   ['Huge Document', HugeDocument, '/huge-document'],
   ['History', History, '/history'],
+  ['Playground', Playground, '/playground'],
 ]
 
 /**

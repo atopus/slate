@@ -1,0 +1,130 @@
+{
+  "document": {
+    "nodes": [
+      {
+        "object": "block",
+        "type": "paragraph",
+        "nodes": [
+          {
+            "object": "text",
+            "leaves": [
+              {
+                "text": "With SlateJS, a user can create, update and delete not only some rich text or multiple paragraphs, but also a table, an image or a video... and why event not a bunch of bootstrap cards, or any other React custom component ?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object" : "block",
+        "type": "paragraph",
+        "nodes": [
+          {
+            "object" : "text",
+            "leaves" : [
+              {
+                "text" : "This example stretches this logic as far as it can, and explores various ways of structuring a content (like horizontal rules, section, nested chapters, nested comments & paragraphs, etc.)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object" : "block",
+        "type": "block-quote",
+        "nodes" : [
+          {
+            "object": "text",
+            "leaves" : [
+              {
+                "text" : "In this respect, SlateJS might blur the distinction between the levels of DOM management - React or Slate ?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object" : "block",
+        "type" : "section",
+        "nodes" : [
+          {
+            "object" : "block",
+            "type" : "paragraph",
+            "nodes" : [
+              {
+                "object" : "text",
+                "leaves" : [
+                  {
+                    "text" : "Here is for instance a first paragraph of a new section, with top and bottom borders."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "object" : "block",
+            "type" : "paragraph",
+            "nodes" : [
+              {
+                "object" : "text",
+                "leaves" : [
+                  {
+                    "text" : "This is the second paragraph of the section, though the margin-top setting of paragraph in "
+                  },
+                  {
+                    "text" : "style.css",
+                    "marks" : [
+                      {
+                        "type": "code"
+                      }
+                    ]
+                  },
+                  {
+                    "text" : " makes it hard to notice."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "object" : "block",
+        "type" : "paragraph",
+        "nodes" : [
+          {
+            "object" : "text",
+            "leaves" : [
+              {
+                "text" : "This \"playground\" is also intended to find most relevant correspondances between "
+              },
+              {
+                "text": "Inline",
+                "marks" : [
+                  {
+                    "type" : "code"
+                  }
+                ]
+              },
+              {
+                "text" : " and "
+              },
+              {
+                "text" : "Block",
+                "marks" : [
+                  {
+                    "type" : "code"
+                  } 
+                ]
+              },
+              {
+                "text" : " Slate classes and html & custom elements, regarding to their nesting proprieties."
+              
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
