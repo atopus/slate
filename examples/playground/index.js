@@ -5,12 +5,10 @@ import React from 'react'
 import initialValue from './value.json'
 import { isKeyHotkey } from 'is-hotkey'
 
-// import './jquery-3.3.1.js'
-// import './tether.min.js'
-// import './tether.min.css'
-// import './bootstrap.min.css'
-// import './bootstrap.min.js'
 import './playground.css'
+
+const existingValue = JSON.parse(localStorage.getItem('slate-playground'))
+const storedValue = Value.fromJSON(existingValue || initialValue)
 
 /**
  * Define the default node type.
@@ -45,7 +43,7 @@ class Playground extends React.Component {
    */
 
   state = {
-    value: Value.fromJSON(initialValue),
+    value: Value.fromJSON(storedValue),
   }
 
   /**
@@ -91,6 +89,14 @@ class Playground extends React.Component {
    */
 
   onChange = ({ value }) => {
+
+    // Check to see if the document has changed before saving.
+    if (value.document !== this.state.value.document) {
+
+      const content = JSON.stringify(value.toJSON())
+      localStorage.setItem('slate-playground', content)
+    }
+
     this.setState({ value })
   }
 
